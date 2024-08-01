@@ -2,7 +2,7 @@ import "./Main.css";
 import { useEffect, useState } from "react";
 import Log from "./Log";
 
-const API_BASE = "http://127.0.0.1:5000";
+const API_BASE = "http://127.0.0.1:5000";//change this to local IP address of mac(machine that is running camera and api)
 
 function MainPage({ onLogClicked }) {
   const [armed, setArmed] = useState(false);

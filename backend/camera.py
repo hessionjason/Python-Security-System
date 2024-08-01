@@ -6,7 +6,7 @@ from storage import handle_detection
 
 class Camera:
     net = cv.dnn.readNetFromCaffe('models/config.txt', 'models/mobilenet_iter_73000.caffemodel')
-    cap = cv.VideoCapture(0)
+    cap = cv.VideoCapture(0) #0 points to laptop computer and 1 if there is another camera attached.
     out = None
 
     def __init__(self):
